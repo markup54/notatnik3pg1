@@ -37,8 +37,9 @@
                     <MenuItem
                         IsCheckable="True"
                         IsChecked="True"
+                        Header="Dzień/noc"
                         >
-                        Dzień/noc
+                      
                     </MenuItem>
                     <MenuItem
                         Header="Czerwona"
@@ -50,6 +51,14 @@
                 <MenuItem Header="Rozmiar czcionki"></MenuItem>
 
 
+            </MenuItem>
+            <MenuItem Header="Informacje">
+                <MenuItem Header="O aplikacji"
+                          Click="MenuItem_Click_Apka"
+                          ></MenuItem>
+                <MenuItem Header="O autorze"
+                          Click="MenuItem_Click_Autor"
+                          ></MenuItem>
             </MenuItem>
         </Menu>
         <TextBox

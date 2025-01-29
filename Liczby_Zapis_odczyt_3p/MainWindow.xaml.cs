@@ -97,5 +97,17 @@ namespace Liczby_Zapis_odczyt_3p
                 wpisaneTextBox.Foreground = Brushes.Red;
             }
         }
+
+        private void MenuItem_Click_Apka(object sender, RoutedEventArgs e)
+        {
+            WindowApka windowApka = new WindowApka();
+            windowApka.Show();
+        }
+
+        private void MenuItem_Click_Autor(object sender, RoutedEventArgs e)
+        {
+            WindowAutor windowAutor = new WindowAutor();
+            windowAutor.ShowDialog();
+        }
     }
 }
