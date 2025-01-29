@@ -1,0 +1,9 @@
+﻿<Application x:Class="Liczby_Zapis_odczyt_3p.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Liczby_Zapis_odczyt_3p"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
