@@ -22,6 +22,16 @@
                 <MenuItem Header="Zamknij"
                           Click="MenuItem_Click_Zamknij"/>
             </MenuItem>
+            <MenuItem Header="Edycja">
+                <MenuItem Header="Kopiuj"
+                          Command="ApplicationCommands.Copy"/>
+                <MenuItem Header="Wklej"
+                          Command="ApplicationCommands.Paste"/>
+                <MenuItem Header="Wytnij"
+                          Command="ApplicationCommands.Cut"/>
+                <MenuItem Header="Cofnij"
+                          Command="ApplicationCommands.Undo"/>
+            </MenuItem>
             <MenuItem Header="Formatuj">
                 <MenuItem Header="Kolor czcionki">
                     <MenuItem
