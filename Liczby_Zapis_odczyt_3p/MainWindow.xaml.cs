@@ -63,7 +63,7 @@ namespace Liczby_Zapis_odczyt_3p
         {
             MessageBoxResult result = MessageBox.Show(
                 "Czy chcesz wcześniej coś zapisać?", 
-                "Pytanie",
+                "Pytanko",
                 MessageBoxButton.YesNoCancel, 
                 MessageBoxImage.Question);
             if(result == MessageBoxResult.Yes)
@@ -101,13 +101,34 @@ namespace Liczby_Zapis_odczyt_3p
         private void MenuItem_Click_Apka(object sender, RoutedEventArgs e)
         {
             WindowApka windowApka = new WindowApka();
-            windowApka.Show();
+            windowApka.Show();//okno niemodalne, można w tle wszystko zmieniać
         }
 
         private void MenuItem_Click_Autor(object sender, RoutedEventArgs e)
         {
             WindowAutor windowAutor = new WindowAutor();
-            windowAutor.ShowDialog();
+            windowAutor.ShowDialog();//okno modalne
+            //dopóki jest otwarte to w tle nie można zmieniać
+            //https://learn.microsoft.com/pl-pl/dotnet/desktop/wpf/windows/dialog-boxes-overview?view=netdesktop-9.0
+
+        }
+
+        private void MenuItem_Checked(object sender, RoutedEventArgs e)
+        {
+            if(wpisaneTextBox!=null)
+            {
+                wpisaneTextBox.Background = Brushes.White;
+                wpisaneTextBox.Foreground = Brushes.Black;
+            }
+        }
+
+        private void MenuItem_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (wpisaneTextBox != null)
+            {
+                wpisaneTextBox.Foreground = Brushes.White;
+                wpisaneTextBox.Background = Brushes.Black;
+            }
         }
     }
 }

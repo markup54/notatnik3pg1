@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Liczby_Zapis_odczyt_3p"
         mc:Ignorable="d"
-        Title="WindowApka" Height="450" Width="800">
-    <Grid>
+        Title="Informacje o aplikacji" Height="150" Width="100">
+    <StackPanel>
+        <Label>Sprytny notatnik, potrafi zapisywać odczytywać i jest nasz</Label>
         
-    </Grid>
+    </StackPanel>
 </Window>

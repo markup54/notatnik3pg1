@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Liczby_Zapis_odczyt_3p"
         mc:Ignorable="d"
-        Title="WindowAutor" Height="450" Width="800">
+        Title="Informacje o autorze" Height="450" Width="800">
     <Grid>
-        
+        <Label> Autorem aplikacji jest klasa 3P, technikum programistycznego</Label>
     </Grid>
 </Window>

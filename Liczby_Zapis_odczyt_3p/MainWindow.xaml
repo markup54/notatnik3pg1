@@ -38,6 +38,8 @@
                         IsCheckable="True"
                         IsChecked="True"
                         Header="Dzień/noc"
+                        Checked="MenuItem_Checked"
+                        Unchecked="MenuItem_Unchecked"
                         >
                       
                     </MenuItem>
