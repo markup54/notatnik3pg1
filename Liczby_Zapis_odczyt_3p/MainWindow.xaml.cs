@@ -130,5 +130,47 @@ namespace Liczby_Zapis_odczyt_3p
                 wpisaneTextBox.Background = Brushes.Black;
             }
         }
+
+        private void MenuItem_Click_Dowolny_kolor(object sender, RoutedEventArgs e)
+        {
+            WindowKolor windowKolor = new WindowKolor();
+            MessageBox.Show("Bedzie otwierane okno");
+            windowKolor.ShowDialog();
+            MessageBox.Show("Po zamknięciu");
+            byte r = windowKolor.R;
+            byte g = windowKolor.G;
+           byte b = windowKolor.B;
+
+            Color color = Color.FromRgb(r, g, b);
+            wpisaneTextBox.Background = new SolidColorBrush(color);
+
+
+        }
+
+        private void MenuItem_Click_formatczionki(object sender, RoutedEventArgs e)
+        {
+            WindowCzcionka windowCzcionka = new WindowCzcionka();
+            windowCzcionka.ShowDialog();
+        }
+
+        private void MenuItem_Click_DowolnyKolor(object sender, RoutedEventArgs e)
+        {
+            WindowColor windowColor = new WindowColor();
+            //MessageBox.Show("Zaraz otworzy się okno");
+            windowColor.ShowDialog();//blokuje wszystko w tle modalne
+            byte r = windowColor.R;
+           byte g = windowColor.G;  
+           byte b = windowColor.B;
+            Color color = Color.FromRgb(r, g, b);
+            //MessageBox.Show("Po otwarciu okna");
+            wpisaneTextBox.Background = new SolidColorBrush(color);
+
+        }
+
+        private void MenuItem_Click_zMIANACzcionki(object sender, RoutedEventArgs e)
+        {
+            WindowFont windowFont = new WindowFont();   
+            windowFont.ShowDialog();
+        }
     }
 }

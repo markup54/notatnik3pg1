@@ -48,9 +48,13 @@
                         Click="MenuItem_Click_CzerwonaCzcionka"
                         />
                     <MenuItem 
-                        Header="Dowolna"/>
+                        Header="Dowolna"
+                       Click="MenuItem_Click_DowolnyKolor"
+                        />
                 </MenuItem>
-                <MenuItem Header="Rozmiar czcionki"></MenuItem>
+                <MenuItem Header="czcionka"
+                          Click="MenuItem_Click_zMIANACzcionki"
+                          ></MenuItem>
 
 
             </MenuItem>
@@ -67,7 +71,8 @@
             x:Name="wpisaneTextBox"
             AcceptsReturn="True"
             TextWrapping="Wrap"
-            VerticalScrollBarVisibility="Auto" TextChanged="TextChange_AktualizacjaTytułu"
+            VerticalScrollBarVisibility="Auto" 
+            TextChanged="TextChange_AktualizacjaTytułu"
             
             >
             
